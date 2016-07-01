@@ -1,6 +1,9 @@
 <?php
-
-require_once 'vendor/autoload.php';
+if(file_exists('vendor/autoload.php')){
+	require_once 'vendor/autoload.php';
+} else {
+	echo "Vous devez lancer un composer install.";
+}
 require_once 'header.php';
 if(file_exists('config.php')){
 	require_once 'config.php';
@@ -14,14 +17,17 @@ $router->setBasePath('/cours/35git');
 echo "test";
 $router->map('GET','/',function(){
 	echo "Hello world";
-	
+	?> 
+	<div id="contact"></div>
+	<?php
 });
 
 $router->map('GET','/[:slug]',function($slug){
 	echo "Hello ".$slug;
 });
 
-$router->map('GET','/faker/add',function($slug){
+$router->map('GET','faker/add',function($slug){
+	
 	
 });
 

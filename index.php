@@ -21,6 +21,10 @@ $router->map('GET','/[:slug]',function($slug){
 	echo "Hello ".$slug;
 });
 
+$router->map('GET','/faker/add',function($slug){
+	
+});
+
 $match = $router->match();
 
 if($match && is_callable($match['target'])){

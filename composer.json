@@ -2,6 +2,7 @@
     "name": "halim/exercice",
     "require": {
         "Altorouter/altorouter": "^1.2",
-        "fzaninotto/faker": "^1.6"
+        "fzaninotto/faker": "^1.6",
+        "components/jquery": "^3.0"
     }
 }

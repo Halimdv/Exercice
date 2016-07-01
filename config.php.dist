@@ -1,0 +1,9 @@
+<?php
+
+
+define('HOST', 'YOUR-HOST');
+define('USER', 'YOUR-USER');
+define('PASS', 'YOUR-PASSWORD');
+define('DATABASE', 'YOUR-DATABASE');
+
+?>

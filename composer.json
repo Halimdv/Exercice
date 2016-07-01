@@ -1,0 +1,7 @@
+{
+    "name": "halim/exercice",
+    "require": {
+        "Altorouter/altorouter": "^1.2",
+        "fzaninotto/faker": "^1.6"
+    }
+}

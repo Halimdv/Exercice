@@ -1,6 +1,9 @@
 # Exercice
 Exercice de vendredi. A faire tranquillement. L'exo est large, mais vous faites ce que vous pouvez, pas de pression comme les Portugais à l'heure où j'écris ce README :).
 
+## TMP
+- Renommer le fichier config.php.dist en config.php en remplaçant les données de configuration
+
 ## TODO
 
 - Il faudrait commencer par faire un fork du dépôt

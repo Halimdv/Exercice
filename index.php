@@ -14,9 +14,13 @@ if(file_exists('config.php')){
 $router = new AltoRouter();
 $router->setBasePath('/cours/35git');
 
+$afficher = false;
+
 echo "test";
 $router->map('GET','/',function(){
 	echo "Hello world";
+	global $afficher;
+	$afficher = true;
 	?> 
 	<div id="contact"></div>
 	<?php
@@ -26,9 +30,28 @@ $router->map('GET','/[:slug]',function($slug){
 	echo "Hello ".$slug;
 });
 
-$router->map('GET','faker/add',function($slug){
-	
-	
+$router->map('GET','/faker/add',function(){
+	$faker = Faker\Factory::create("fr_FR");
+	$data = '{ 
+	 "contacts": [
+	 ';
+	for($i = 0; $i <3; $i++){
+		$prenom = $faker->firstName();
+		$nom = $faker->lastName();
+		$tel = $faker->phoneNumber();
+		$data .= ' {
+				"firstName" : "'.$prenom.'",
+				"lastName" : "'.$nom.'",
+				"phone" : "'.$tel.'",
+			},
+		';
+	}
+	$data .= ']
+}';
+	$file = fopen("data.json", "w");
+	fwrite($file, $data);
+	fclose($file);
+
 });
 
 $match = $router->match();

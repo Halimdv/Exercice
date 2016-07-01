@@ -1,19 +1,19 @@
-{
-  "contacts": [
-    {
-      "firstName": "John",
-      "lastName": "Doe",
-      "phone": "0604124798"
-    },
-    {
-      "firstName": "Mark",
-      "lastName": "Capo",
-      "phone": "0648514263"
-    },
-    {
-      "firstName": "Erik",
-      "lastName": "Modd",
-      "phone": "0689412365"
-    }
-  ]
+{ 
+	 "contacts": [
+	  {
+				"firstName" : "Odette",
+				"lastName" : "Martin",
+				"phone" : "+33 (0)5 65 43 70 02",
+			},
+		 {
+				"firstName" : "Jules",
+				"lastName" : "Ramos",
+				"phone" : "0810789578",
+			},
+		 {
+				"firstName" : "Alex",
+				"lastName" : "Charrier",
+				"phone" : "09 68 82 05 26",
+			},
+		]
 }
